@@ -1,0 +1,23 @@
+<html>  
+    <head>
+    </head>
+    <body>
+        <h1 id="case0">case0</h1>
+        <h1 id="case1">case1</h1>
+        <h1 id="case2">case2</h1>
+        <h1 id="case3">case3</h1>
+        <h1 id="case4">case4</h1>
+        
+    </body>
+   <script>
+        function hideElementById(vetor){
+            for(i = 0; i < vetor.length; i++){
+                if(vetor[i].charAt(4) < 2){
+                    document.getElementById(vetor[i]).style.display = "none";
+                }
+            }
+        }
+        idDasDiv = ["case0", "case1", "case2", "case3", "case4"];
+        hideElementById(idDasDiv);
+        </script>
+</html>
